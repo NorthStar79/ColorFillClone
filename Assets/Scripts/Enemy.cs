@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     public GameObject EnemyFructure;
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("sadas");
         if (other.transform.CompareTag("Player"))
         {
             if(!other.gameObject.GetComponent<PlayerController>().isAlive) return;
